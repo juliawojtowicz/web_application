@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;700&display=swap");
+
+body
+{
+    font-family: 'Amatic SC', cursive;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-weight: 600;
+}
+
+
+html {
+    font-size: 62,5%;
+    scrollbar-width: none;
+}
+
+
+body {
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Amatic SC', cursive;
+    scrollbar-width: none;
+}
+
+.bodyCenter{
+    top: 200px;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    font-family: 'Amatic SC', cursive;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 80px;
+    font-family: 'Amatic SC', cursive;
+}
+
+.main-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0;
+    font-family: 'Amatic SC', cursive;
+}
+
+.h2{
+    margin-bottom:40px;
+    font-family: 'Amatic SC', cursive;
+}
+
+.contactDetails{
+    position: relative;
+    margin: auto;
+    padding: 10px;
+    font-family: 'Amatic SC', cursive;
+}
+
+.oHours{
+    position: relative;
+    margin: auto;
+    padding: 10px;
+    font-family: 'Amatic SC', cursive;
+}
+
+.info-text{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: 'Amatic SC', cursive;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 200px;
+    margin-top: 60px;
+    font-family: 'Amatic SC', cursive;
+    font-size:1.3rem;
+}
+
+.formbox{
+    font-family: 'Amatic SC', cursive;
+    width: 22%;
+    height:380px;
+    position: relative;
+    margin: auto;
+    background: #92977a;
+    padding: 10px;
+    overflow: hidden;  
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+/* FORMULARZ*/
+.formbox h1{
+    font-size:2.5rem;
+}
+
+.formbox h6{
+    margin-top: 10px;
+    font-size:0.9rem;
+}
+
+.firstInForm{
+    position: relative;
+    width: 150px;
+    height: 30px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-family: 'Amatic SC', cursive;
+}
+
+.secondInForm{
+    position: relative;
+    width: 300px;
+    height: 90px;
+    margin-bottom: 15px;
+    font-family: 'Amatic SC', cursive;
+}
+
+.sendMessage-btn{
+    position: relative;
+    width: 300px;
+    height: 40px;
+    font-family: 'Amatic SC', cursive;
+}
+
+#error{
+    margin-top: 15px;
+    color: rgb(230, 24, 24);
+    font-family: 'Amatic SC', cursive;
+    font-size:1.4rem;
+}
+
+#approved{
+    margin-top: 15px;
+    color: rgb(147, 209, 53);
+    font-family: 'Amatic SC', cursive;
+    font-size:1.4rem;
+}
+
+/* RESPONSYWNOŚĆ */
+@media screen and (max-width: 1250px) {
+
+    .info{
+        margin-top: 100px;
+        margin-left: 150px;
+        font-size:16px;
+    }
+
+    .map h2{
+        font-size:24px;
+    }
+
+    .map iframe{
+        width: 400px;
+        height:300px;
+    }
+
+}
+
+@media screen and (max-width: 1050px) {
+
+    .formbox{
+        display:none;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .map{
+        display:none;
+    }
+
+    .info-text{
+        margin-bottom:100px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+}
+
+

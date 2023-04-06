@@ -1,0 +1,265 @@
+body
+{
+    
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 100vh;
+    font-weight: 600;
+    font-style: bold;
+    font-family: 'Amatic SC', cursive;
+    background-color: #e5e5e5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: rgb(229,229,229) !important;
+}
+
+
+.container {
+
+    width: 100%;
+    height: 100vh;
+    background-color: #e5e5e5;
+}
+
+
+.box
+{
+    
+    
+    background-image: url('podsumowanie2.png');
+    background-size: cover;
+    background-position: center;
+    width: 70%;
+    height: 90%;
+    position: relative;
+    margin: auto;
+    top: 5%; 
+    font-family: 'Amatic SC', cursive;
+    flex-direction: column;
+   
+    
+}
+
+.containersum
+{
+    display: flex;
+    flex: 1 0 50%;
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+
+
+.shipment
+{
+    flex: 1 0 50%;
+    justify-content: center;
+    padding-left: 5%;
+
+    
+}
+
+.info
+{
+    font-family: 'Amatic SC', cursive;
+    font-size: 25px;
+    padding-bottom: 2%;
+}
+
+
+.wiersz
+{
+    font-family: 'Amatic SC', cursive;
+    font-size: 23px;
+}
+
+.summary_suma-display{
+    margin-top: 15px;
+    font-size:1.3rem;
+    font-family: 'Amatic SC', cursive;
+}
+
+#summary_suma
+{
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+}
+
+#summary_sum-all-prices
+{
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+}
+
+
+.podsumowaniediv
+{
+    flex: 1 0 50%;
+    display:flex;
+    flex-direction: column;
+
+    
+}
+
+.podsumowaniediv ul {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Amatic SC', cursive;
+}
+
+.podsumowaniediv .buyItem
+{
+    margin: auto;
+    width: 90%;
+    padding: 10px 0;
+    display: flex;
+    font-family: 'Amatic SC', cursive;
+}
+
+.twojezamowienie
+{
+    font-family: 'Amatic SC', cursive;
+    font-size: 25px;
+    width: 80%;
+    padding-bottom: 2%;
+}
+
+.powrot
+{
+   width: 80%;
+   padding-bottom: 15%;
+   padding-left: 5%;
+}
+
+.podsumowanietekst
+{
+    width: 80%;
+    padding-top: 10%;
+    padding-left: 5%;
+    font-family: 'Amatic SC', cursive;
+    font-style: bold;
+    font-weight: 600;
+    font-size: 40px;;
+}
+
+.submit-btn
+{
+    width: 30%;
+    padding: 5px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: #646c39;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Amatic SC', cursive;
+    font-style: bold;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+@media (max-width: 1500px)
+{
+   .box
+   {
+       width: 80%;
+       height: 100%; 
+   }
+   
+}
+
+@media (max-width: 1400px)
+{
+   .box
+   {
+       width: 90%;
+       height: 90%; 
+   }
+   
+}
+
+@media (max-width: 1200px)
+{
+   .box
+   {
+       width: 100%;
+       height: 100%; 
+   }
+   
+}
+
+@media (max-width: 1100px)
+{
+   .box
+   {
+       width: 80%; 
+       height: 90%;
+       background-image: url('kwadratt.png');
+       background-size: cover;
+       background-position: center;
+    
+   }
+   .containersum
+   {
+    padding-left: 10%;
+   }
+   .podsumowanietekst
+   {
+    padding-left: 10%;
+    padding-top: 12%;
+   }
+   .powrot
+   {
+    padding-left: 10%;
+   }
+
+}
+
+@media (max-width: 800px)
+{
+   .box
+   {
+       width: 90%;
+       height: 100%; 
+       background-image: url('pionform.png');
+       background-size: cover;
+       background-position: center;
+   }
+   .containersum
+   {
+    padding-left: 10%;
+   }
+   .podsumowanietekst
+   {
+    padding-left: 10%;
+    padding-top: 16%;
+   }
+   .powrot
+   {
+    padding-left: 10%;
+   }
+   .submit-btn
+   {
+       width: 40%;
+   }
+     
+}

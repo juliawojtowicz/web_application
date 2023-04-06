@@ -1,0 +1,373 @@
+/*css paska, zeby nie kopiowac tego do kazdego css*/
+
+*{
+    font-family: 'Amatic SC', cursive;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+}
+
+.containerHeader
+
+{
+    font-family: 'Amatic SC', cursive;
+    background-image: url('glowna_1.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+
+}
+
+body {
+    font-family: 'Amatic SC', cursive;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-color: transparent !important;
+}
+
+html {
+    background: rgb(222,222,222) !important;
+}
+
+.box
+{
+    font-family: 'Amatic SC', cursive;
+    position: relative;
+    top: 35px;
+    left: 20px;
+    z-index: 1500;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 85%;
+    margin: auto;
+    background: transparent;
+    padding: 10px;
+    overflow: visible; /* jest visible zeby bylo widac dropdown menu (mozliwe ze moze to w czyms przeszkadzac) */
+    padding: 10px;
+    border-radius: 30px;
+    
+}
+
+#menuButton {
+    width: 45px;
+    height: 40px;
+    cursor: pointer;
+    color: #000000;
+    background: transparent;
+    border: none;
+    display: none;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+#menuButton:focus {
+    outline: none;
+}
+
+#menuButton:hover {
+    color: #646c39;
+} 
+
+.logo a{
+    font-family: 'Amatic SC', cursive;
+    font-size: 4rem;
+    font-weight:bold;
+    position: relative;
+    color: var(--black);
+    text-decoration:none;
+}
+.logo a:hover{
+    color: #646c39;
+    text-decoration:none;
+}
+
+.links a{
+    font-family: 'Amatic SC', cursive;
+    position: relative;
+    margin: 0 1rem;
+    color: var(--black);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.links a:hover{
+    color: #646c39;
+}
+
+.header .icons{
+    position: absolute;
+    top: 10px;
+    left: 1300px;
+    width: 150px;
+    height: 75px;
+}
+
+.header .shopping-cart{
+    margin-left: 10px;
+    font-size: 1.4rem;
+}
+
+.shopping-cart .sum-prices {
+    font-family: 'Amatic SC', cursive;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#sum-prices {
+    font-family: 'Amatic SC', cursive;
+    padding-left: 5px;
+}
+
+.sum-prices h6 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.5rem;
+}
+
+.shoppingCartButton,
+.account-btn {
+    cursor: pointer;
+}
+
+.shoppingCartButton:hover,
+.account:hover * {
+    color: #646c39;
+}
+
+.producstOnCart {
+    scrollbar-width: none;
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    overscroll-behavior: contain;
+    background-color: #202020;
+    width: 300px;
+    height: 500px;
+    color: #f0f0f0;
+    z-index: 15;
+    position: fixed;
+    top: 20px;
+    right: 0;
+    text-align: center;
+    animation: fade 1s;
+    letter-spacing: 1px;
+}
+
+.producstOnCart::-webkit-scrollbar {
+    display: none;
+}
+
+@keyframes fade {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: none;
+    }
+}
+
+.producstOnCart::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.hide {
+    display: none;
+    visibility: none;
+}
+
+.producstOnCart ul {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.producstOnCart .buyItem {
+    border-bottom: #aaa 1px solid;
+    width: 90%;
+    padding: 10px 0;
+    display: flex;
+}
+
+.buyItem img{
+    margin-right:10px;
+}
+
+.icons {
+    max-width: 1600px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+/* WYGLĄD KOSZYKA*/
+#closeButton{
+    display:flex;
+    align-items: left;
+    font-size: 1.2rem;
+
+}
+
+#closeButton:hover,
+.checkout:hover{
+    background-color:#949882;
+}
+.producstOnCart .buyItem h3{
+    margin-bottom:30px;
+    font-size:1.4rem;
+}
+.producstOnCart .buyItem h5{
+    margin-bottom: 5px;
+    font-size:0.9rem;
+}
+
+.producstOnCart .buyItem h6{
+    margin-bottom: 5px;
+    font-size:0.8rem;
+}
+
+.suma-display{
+    margin-top: 15px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size:1.5rem;
+}
+
+.checkout{
+    width:200px;
+    height:20px;
+    margin-left: 50px;
+    margin-top: 15px;
+    margin-top:50px;
+}
+
+/* Dropdown PRODUKTY */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 120px;
+    
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2000;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #646c39;}
+
+/* RESPONSYWNOŚĆ taka se but ok*/
+@media screen and (max-width: 1450px) {
+    
+    .box
+    {
+        top: 70px;
+    }
+
+    .logo a{
+        font-size: 44px;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    
+    .box
+    {
+        top: 90px;
+    }
+
+    .logo a{
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .box
+    {
+        top: 100px;
+    }
+
+    .logo a{
+        font-size: 34px;
+    }
+
+    .links a{
+        font-size:16px;
+        margin:4px;
+    }
+}
+
+@media screen and (max-width: 1210px) {
+    .box
+    {
+        top: 120px;
+    }
+
+    .logo a{
+        font-size: 30px;
+    }
+
+    .links a{
+        font-size:14px;
+        margin:2px;
+    }
+
+    .account-text {
+        display: none;
+    }
+
+    .sum-prices h6{
+        display:none;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .box
+    {
+        top: 140px;
+    }
+
+    .logo a{
+        font-size: 26px;
+    }
+
+    .links a{
+        font-size:12px;
+        margin:2px;
+    }
+
+    .sum-prices h6{
+        display:none;
+    }
+}
+
+
